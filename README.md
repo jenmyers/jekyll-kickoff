@@ -2,14 +2,21 @@
 
 A beginning template for Jekyll projects.
 
-## Includes:
+## Includes
 
 - basic site structure
 - HTML5 Boilerplate index, 404, robots and humans files + favicon
 - Compass + Susy starter stylesheets and configuration file
 - local jQuery fallback
 
-## Tools:
+## Needs:
+
+- full directory structure
+- .gitignore
+
+__[See gist for examples.](https://gist.github.com/jenmyers/6692284)__
+
+## Tools
 
 - [Jekyll](http://jekyllrb.com/)
 - [HTML5 Boilerplate](http://html5boilerplate.com/)
