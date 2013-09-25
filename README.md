@@ -9,12 +9,12 @@ A beginning template for Jekyll projects.
 - Compass + Susy starter stylesheets and configuration file
 - local jQuery fallback
 
-## Needs:
+## Needs
 
 - full directory structure
 - .gitignore
 
-__[See gist for examples.](https://gist.github.com/jenmyers/6692284)__
+__[See gist for examples →](https://gist.github.com/jenmyers/6692284)__
 
 ## Tools
 
