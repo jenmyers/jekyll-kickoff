@@ -12,7 +12,6 @@ A beginning template for Jekyll projects.
 ## Needs
 
 - full directory structure
-- .gitignore
 
 __[See gist for examples →](https://gist.github.com/jenmyers/6692284)__
 
