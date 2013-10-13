@@ -47,6 +47,6 @@ This tells Compass to watch for changes you make to the Sass/SCSS. files and com
 8. Open your web browser and go to: __http://localhost:4000__. You should see the HTML5 Boilerplate welcome message and the Susy grid framework overlay.
 9. Now you're ready to build! As you make changes to your HTML and Sass/SCSS, Jekyll will automatically rebuild the site and put all the compiled files into a folder called "_site." You can refresh your browswer window to see the changes displayed.
 
-If you're also just getting started with [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/) and [Susy](http://susy.oddbird.net/), check out their reference sites for more information.
+If you're also just getting started with [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/) and [Susy](http://susy.oddbird.net/), check out their sites for more information. I've also created a list of [Sass/Compass tutorials and references](https://gist.github.com/jenmyers/9923d545c95ca747dec5).
 
 Once you're done with your site, check out how to easily deploy it to [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages).
