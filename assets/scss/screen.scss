@@ -1,12 +1,9 @@
 // ---------------------------------------------------------------------------
 // Imports
 
-@import "base";
+@import "bourbon/bourbon";
+@import "grid-settings";
+@import "neat/neat"; 
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
-
-.container {
-  @include container;
-  @include susy-grid-background;
-}
