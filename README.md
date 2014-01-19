@@ -5,7 +5,7 @@ A minimal beginner template for Jekyll projects.
 ## Includes
 
 - basic site structure
-- HTML5 Boilerplate index, 404, robots and humans files + favicon
+- HTML5 Boilerplate index + favicon
 - Compass + Susy starter stylesheets and configuration file
 - local jQuery fallback
 
