@@ -60,3 +60,7 @@ This tells Sass to watch for changes you make to the Sass/SCSS. files and compil
 If you're also just getting started with [Sass](http://sass-lang.com/), [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/), check out their sites for more documentation and help.
 
 Once you're done with your site, check out how to easily deploy it to [GitHub Pages](https://help.github.com/articles/using-jekyll-with-pages).
+
+## Compass/Susy
+
+This template originally used the Sass library [Compass](http://compass-style.org/) and grid framework [Susy](http://susy.oddbird.net/) instead of Bourbon/Neat. If you want the Compass/Susy verison instead, checkout the "compass" branch rather than "master." 
