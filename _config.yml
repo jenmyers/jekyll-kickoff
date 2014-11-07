@@ -14,22 +14,20 @@ encoding:    nil
 future:      true
 show_drafts: nil
 limit_posts: 0
-pygments:    true
+highlighter: pygments
 
 relative_permalinks: true
 
 permalink:     date
 paginate_path: 'page:num'
 
-markdown:      maruku
+markdown:      Kramdown
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
 
 excerpt_separator: "\n\n"
 
 safe:        false
-watch:       false    # deprecated
-server:      false    # deprecated
 host:        0.0.0.0
 port:        4000
 baseurl:     /
