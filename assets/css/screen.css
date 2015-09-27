@@ -5,3 +5,64 @@
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
+body {
+  font-family: "Open Sans", "Arial"; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Montserrat", "Open Sans", "Arial"; }
+
+h1 {
+  font-size: 66px;
+  line-height: 66px;
+  color: #1f436e;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.accent {
+  background-color: #019973;
+  width: 220px;
+  height: 14px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+a {
+  text-decoration: none;
+  color: #990145;
+  padding: 2px 6px;
+  border-radius: 5px; }
+  a:hover {
+    background-color: #efefef; }
+  a.red {
+    color: #990145; }
+  a.yellow {
+    color: #998501; }
+  a.blue {
+    color: #016999; }
+  a.aqua {
+    color: #018c99; }
+
+header {
+  text-align: center;
+  margin-top: 50px; }
+  header h1 {
+    margin-bottom: 36px; }
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    header nav ul li {
+      display: inline-block;
+      text-transform: uppercase;
+      font-family: "Montserrat", "Open Sans", "Arial";
+      font-size: 26px; }
+      header nav ul li a {
+        padding: 10px;
+        text-decoration: none; }
+
+section.contents {
+  max-width: 500px;
+  width: 100%;
+  margin: 70px auto; }
+
+/*# sourceMappingURL=screen.css.map */
