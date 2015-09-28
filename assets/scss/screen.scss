@@ -24,7 +24,7 @@ body {
 	font-family: $body_font;
 	margin:0;
 	padding:0;
-	background-image: url('../images/crossword.png');
+	background-image: url('..	/images/crossword.png');
 }
 
 h1, h2, h3, h4, h5 {
@@ -89,6 +89,9 @@ a {
 
 	h1 {
 		margin-bottom:36px;
+		font-size:100px;
+		line-height: 100px;
+		margin-top:80px;
 	}
 
 }

@@ -9,7 +9,7 @@ body {
   font-family: "Open Sans", "Arial";
   margin: 0;
   padding: 0;
-  background-image: url("../images/crossword.png"); }
+  background-image: url("..	/images/crossword.png"); }
 
 h1, h2, h3, h4, h5 {
   font-family: "Montserrat", "Open Sans", "Arial"; }
@@ -54,7 +54,10 @@ a {
   text-align: center;
   margin-top: 50px; }
   .container.default-layout header h1 {
-    margin-bottom: 36px; }
+    margin-bottom: 36px;
+    font-size: 100px;
+    line-height: 100px;
+    margin-top: 80px; }
 
 .container.post-layout header {
   width: 100%;
