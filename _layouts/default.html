@@ -1,0 +1,19 @@
+{% include header.html %}
+
+<div class="container default-layout">
+	<header>
+		<div class="accent"></div>
+		<h1>
+			<a href="{{ site.baseurl }}">
+				Desiging Email
+			</a>
+		</h1>
+		<div class="accent"></div>
+		{% include nav.html %}	
+	</header>
+	<section class="contents">
+		{{ content }}
+	</section>
+</div>
+
+{% include footer.html %}

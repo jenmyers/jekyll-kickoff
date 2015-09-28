@@ -6,7 +6,9 @@
 /* -------------------------------------------------------------------------*/
 /* Layout */
 body {
-  font-family: "Open Sans", "Arial"; }
+  font-family: "Open Sans", "Arial";
+  margin: 0;
+  padding: 0; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Montserrat", "Open Sans", "Arial"; }
@@ -14,9 +16,14 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 66px;
   line-height: 66px;
-  color: #1f436e;
   margin-top: 20px;
   margin-bottom: 20px; }
+  h1 a {
+    color: #1f436e; }
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px; }
 
 .accent {
   background-color: #019973;
@@ -42,27 +49,54 @@ a {
   a.aqua {
     color: #018c99; }
 
-header {
+.container.default-layout header {
   text-align: center;
   margin-top: 50px; }
-  header h1 {
+  .container.default-layout header h1 {
     margin-bottom: 36px; }
-  header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    header nav ul li {
-      display: inline-block;
-      text-transform: uppercase;
-      font-family: "Montserrat", "Open Sans", "Arial";
-      font-size: 26px; }
-      header nav ul li a {
-        padding: 10px;
-        text-decoration: none; }
+
+.container.post-layout header {
+  width: 100%;
+  padding: 20px; }
+  .container.post-layout header .accent {
+    width: 100%; }
+  .container.post-layout header h1 {
+    float: left; }
+  .container.post-layout header nav {
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px; }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Open Sans", "Arial";
+    font-size: 26px; }
+    nav ul li a {
+      padding: 10px;
+      text-decoration: none; }
 
 section.contents {
   max-width: 500px;
   width: 100%;
   margin: 70px auto; }
+section.hero {
+  padding: 20px;
+  text-align: center; }
+  section.hero h1 {
+    font-size: 50px; }
+
+article.post time {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold; }
+
+.align-center {
+  text-align: center; }
 
 /*# sourceMappingURL=screen.css.map */

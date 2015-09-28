@@ -22,6 +22,8 @@ $lgray: #efefef;
 /* Layout */
 body {
 	font-family: $body_font;
+	margin:0;
+	padding:0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -31,9 +33,16 @@ h1, h2, h3, h4, h5 {
 h1 {
 	font-size: 66px;
 	line-height:66px;
-	color: $purple;
 	margin-top:20px;
 	margin-bottom:20px;
+	a {
+		color: $purple;
+	}
+}
+
+h2 {
+	margin-top:5px;
+	margin-bottom:5px;
 }
 
 .accent {
@@ -70,11 +79,10 @@ a {
 	&.aqua {
 		color: $aqua;
 	}
-
 }
 
 
-header {
+.container.default-layout header {
 	text-align:center;
 	margin-top:50px;
 
@@ -82,25 +90,44 @@ header {
 		margin-bottom:36px;
 	}
 
+}
+.container.post-layout header {
+	width:100%;
+	padding:20px;
+	.accent {
+		width: 100%;
+	}
+	h1 {
+		float:left;
+	}
 	nav {
-		ul {
-			list-style: none;
-			margin:0;
-			padding:0;
+		float:left;
+		margin-top:40px;
+		margin-left:40px
+	}
+}
 
-			li {
-				display: inline-block;
-				text-transform: uppercase;
-				font-family: $hed_font;
-				font-size:26px;
-				a {
-					padding:10px;
-					text-decoration: none;
-				}
+
+nav {
+	ul {
+		list-style: none;
+		margin:0;
+		padding:0;
+
+		li {
+			display: inline-block;
+			text-transform: uppercase;
+			font-family: $hed_font;
+			font-size:26px;
+			a {
+				padding:10px;
+				text-decoration: none;
 			}
 		}
 	}
 }
+
+
 
 section {
 
@@ -110,4 +137,27 @@ section {
 		margin:70px auto;
 	}
 
+	&.hero {
+		padding:20px;
+		text-align: center;
+		h1 {
+			font-size: 50px;
+		}
+	}
+
 }
+
+article.post {
+	time {
+		text-transform: uppercase;
+		font-size:12px;
+		line-height: 12px;
+		font-weight: bold;
+	}
+}
+
+.align-center {
+	text-align: center;
+}
+
+
