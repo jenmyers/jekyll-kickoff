@@ -1,0 +1,17 @@
+{% include header.html %}
+
+<div class="container default-layout">
+	<header>
+		<h1>
+			<a href="{{ site.baseurl }}">
+				Designing.Email
+			</a>
+		</h1>
+		{% include nav.html %}	
+	</header>
+	<section class="contents">
+		{{ content }}
+	</section>
+</div>
+
+{% include footer.html %}

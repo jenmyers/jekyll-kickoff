@@ -1,0 +1,26 @@
+{% include header.html %}
+
+<div class="container post-layout">
+	<header>
+		<h1>
+			<a href="{{ site.baseurl }}">
+				Designing.Email
+			</a>
+		</h1>
+		<h2>
+			Consultants &amp; Creators
+		</h2>
+		{% include nav.html %}
+	</header>
+	<section class="hero homepage-hero">
+		<div class="hero-overlay">
+			<h3>Modern email is changing how audiences are grown and we're here to help.</h3>
+			<a class="btn" href="#">Learn more</a>
+		</div>
+	</section>
+	<section class="contents">
+		{{ content }}
+	</section>
+</div>
+
+{% include footer.html %}

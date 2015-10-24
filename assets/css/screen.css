@@ -5,3 +5,223 @@
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
+body {
+  font-family: "Open Sans", "Arial";
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/crossword.png"); }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Abel", "Open Sans", "Arial"; }
+
+h1 {
+  font-size: 66px;
+  line-height: 66px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  h1 a {
+    color: #1f436e; }
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 45px; }
+
+a {
+  text-decoration: none;
+  color: #016999;
+  border-radius: 5px; }
+  a:hover {
+    background: #efefef;
+    box-shadow: 2px 0 0 #efefef, -2px 0 0 #efefef; }
+  a.red {
+    color: #990145; }
+  a.yellow {
+    color: #998501; }
+  a.blue {
+    color: #016999; }
+  a.aqua {
+    color: #018c99; }
+
+.container.post-layout header {
+  width: 100%;
+  padding: 30px;
+  clear: both; }
+  .container.post-layout header h1 {
+    float: left;
+    margin-top: 0;
+    letter-spacing: .10em; }
+  .container.post-layout header h2 {
+    float: right;
+    text-transform: uppercase;
+    color: #666;
+    font-size: 32px;
+    margin-top: 10px; }
+  .container.post-layout header nav {
+    width: 100%;
+    clear: both; }
+  .container.post-layout header:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Abel", "Open Sans", "Arial";
+    font-size: 26px; }
+    nav ul li a {
+      padding: 10px;
+      text-decoration: none; }
+
+.hero {
+  width: 100%;
+  height: 600px;
+  height: calc(100%/33%);
+  min-height: 500px;
+  background-size: cover;
+  position: relative; }
+  .hero.homepage-hero {
+    background-image: url("../images/homepage-hero.jpg");
+    background-position: center bottom; }
+  .hero.testimonial-hero {
+    background-image: url("http://gowithabs.com/wp-content/uploads/2014/11/Business-Team.jpg"); }
+  .hero h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 2px 1px black;
+    font-family: "Montserrat", "Open Sans", "Arial";
+    display: block;
+    margin-bottom: 25px; }
+  .hero .hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 50px;
+    text-align: left;
+    max-width: 600px;
+    float: left;
+    margin-bottom: 60px; }
+  .hero .btn {
+    background: #fff;
+    padding: 12px;
+    font-weight: bold;
+    box-shadow: none;
+    font-size: 20px;
+    background-image: url("../images/crossword.png"); }
+  .hero .btn:hover {
+    background-image: none;
+    background-color: #016999;
+    color: #fff; }
+  .hero blockquote {
+    font-size: 22px;
+    width: 590px;
+    float: right;
+    padding: 50px;
+    font-family: "Open Sans";
+    color: white;
+    text-shadow: 0 1px 1px black;
+    font-weight: bold; }
+
+section.contents {
+  width: 100%;
+  margin: 70px auto; }
+  section.contents h2 {
+    text-align: center; }
+  section.contents .row {
+    max-width: 960px; }
+section.hero {
+  padding: 20px;
+  text-align: center; }
+  section.hero h1 {
+    font-size: 50px; }
+
+.row {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+  .row .holder {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-right: 0;
+    text-align: center;
+    padding: 20px; }
+    .row .holder:last-child {
+      margin-right: 0; }
+    .row .holder h3 {
+      font-family: "Montserrat", "Open Sans", "Arial"; }
+  .row .help-link {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Montserrat", "Open Sans", "Arial"; }
+
+.logo-grid {
+  text-align: center;
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .logo-grid:before, .logo-grid:after {
+    content: " ";
+    display: table; }
+  .logo-grid:after {
+    clear: both; }
+  .logo-grid .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .logo-grid .logo:last-child {
+      margin-right: 0; }
+
+.leadership {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .leadership:before, .leadership:after {
+    content: " ";
+    display: table; }
+  .leadership:after {
+    clear: both; }
+  .leadership .leader {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .leadership .leader:last-child {
+      margin-right: 0; }
+  .leadership img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%; }
+  .leadership h3 {
+    font-family: "Montserrat", "Open Sans", "Arial"; }
+
+article.post time {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold; }
+
+.align-center {
+  text-align: center; }
+
+/*# sourceMappingURL=screen.css.map */

@@ -67,3 +67,10 @@ kramdown:
 
 redcloth:
   hard_breaks: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "tophat"

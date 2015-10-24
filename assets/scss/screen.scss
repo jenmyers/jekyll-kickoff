@@ -2,8 +2,263 @@
 // Imports
 
 @import "bourbon/bourbon";
-@import "grid-settings";
 @import "neat/neat"; 
+
+// Variables
+$hed_font:  "Abel", "Open Sans", "Arial";
+$sec_font:  "Montserrat", "Open Sans", "Arial";
+$body_font:  "Open Sans", "Arial";
+
+$red: #990145;
+$yellow: #998501;
+$blue: #016999;
+$aqua: #018c99;
+$purple: #1f436e;
+// $green: #019973;
+$green: #019973;
+$lgray: #efefef;
+
+$experimental_brown: #797979;
+
+$bg_image: url('../images/crossword.png');
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
+body {
+	font-family: $body_font;
+	margin:0;
+	padding:0;
+	background-image: url('../images/crossword.png');
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $hed_font;
+}
+
+h1 {
+	font-size: 66px;
+	line-height:66px;
+	margin-top:20px;
+	margin-bottom:20px;
+	a {
+		color: $purple;
+	}
+}
+
+h2 {
+	margin-top:5px;
+	margin-bottom:5px;
+	font-size:45px;
+}
+
+a {
+	text-decoration: none;
+	color: $blue;
+	border-radius: 5px;
+
+	&:hover {
+		background: $lgray;
+		box-shadow:2px 0 0 $lgray, -2px 0 0 $lgray;
+	}
+
+	&.red {
+		color: $red;
+	}
+
+	&.yellow {
+		color: $yellow;
+	}
+
+	&.blue {
+		color: $blue;
+	}
+
+	&.aqua {
+		color: $aqua;
+	}
+}
+
+.container.post-layout header {
+	width:100%;
+	padding:30px;
+	h1 {
+		float:left;
+		margin-top:0;
+		letter-spacing: .10em;
+	}
+	h2 {
+		float: right;
+		text-transform: uppercase;
+		color: #666;
+		font-size: 32px;
+		margin-top: 10px;
+	}	
+	nav {
+		width:100%;
+		clear:both;
+	}
+	clear:both;
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+nav {
+	ul {
+		list-style: none;
+		margin:0;
+		padding:0;
+
+		li {
+			display: inline-block;
+			text-transform: uppercase;
+			font-family: $hed_font;
+			font-size:26px;
+			a {
+				padding:10px;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.hero {
+	width: 100%;
+	height: 600px;
+	height: calc(100%/33%);
+	min-height: 500px;
+	background-size: cover;
+	position: relative;
+	&.homepage-hero {
+		background-image: url('../images/homepage-hero.jpg');
+		background-position: center bottom;
+	}
+	&.testimonial-hero {
+		background-image: url('http://gowithabs.com/wp-content/uploads/2014/11/Business-Team.jpg');
+	}
+	h3 {
+		font-size: 40px;
+		font-weight: bold;
+		color: white;
+		text-shadow: 0 2px 1px black;
+		font-family: $sec_font;
+		display: block;
+		margin-bottom:25px;
+	}
+	.hero-overlay {
+		position: absolute;
+		bottom:0;
+		left:0;
+		padding-left:50px;
+		text-align: left;
+		max-width: 600px;
+		float:left;
+		margin-bottom:60px;
+	}
+	.btn {
+		background: #fff;
+		padding: 12px;
+		font-weight: bold;
+		box-shadow: none;
+		font-size: 20px;
+		background-image: $bg_image;
+	}
+	.btn:hover {
+		background-image: none;
+		background-color: $blue;
+		color: #fff;
+	}
+	blockquote {
+		font-size: 22px;
+		width: 590px;
+		float: right;
+		padding: 50px;
+		font-family: "Open Sans";
+		color: white;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+		font-weight: bold;
+	}
+}
+
+section {
+	&.contents {
+		width:100%;
+		margin:70px auto;
+		h2 {
+			text-align: center;
+		}
+		.row {
+			max-width:960px;
+		}
+	}
+	&.hero {
+		padding:20px;
+		text-align: center;
+		h1 {
+			font-size: 50px;
+		}
+	}
+}
+
+.row {
+	@include outer-container;
+	margin-top:50px;
+	.holder {
+		@include span-columns(4);
+		@include omega();
+		text-align: center;
+		padding:20px;
+		h3 {
+			font-family: $sec_font;
+		}
+	}
+	.help-link {
+		text-align:center;
+		font-size:30px;
+		font-family: $sec_font;
+	}
+}
+
+.logo-grid {
+	text-align:center;
+	@include outer-container;
+	.logo {
+		@include span-columns(6);
+	}
+}
+
+.leadership {
+	text-align:center;
+	width:600px;
+	margin:0 auto;
+	@include outer-container;
+	.leader {
+		@include span-columns(6);
+	}
+	img {
+		height:200px;
+		width:200px;
+		border-radius: 100%;
+	}
+	h3 {
+		font-family: $sec_font;
+	}
+}
+
+article.post {
+	time {
+		text-transform: uppercase;
+		font-size:12px;
+		line-height: 12px;
+		font-weight: bold;
+	}
+}
+
+.align-center {
+	text-align: center;
+}
+
+
